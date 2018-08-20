@@ -4,54 +4,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:id="@+id/fragment_register_view"
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:padding="35dp"
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/user"
-                android:drawableLeft="@drawable/ic_person"
+            <LinearLayout
+                android:padding="35dp"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/user_id"
-                android:inputType="textPersonName" />
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_account"
-                android:hint="@string/name"
-                android:inputType="text"
-                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/register_user_id"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_id"
+                    android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/age"
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_date"
-                android:hint="@string/age"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/register_name"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:drawableLeft="@drawable/ic_lock"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/register_age"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
 
-            <Button
-                android:text="@string/btn_register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content" />
 
-        </LinearLayout>
-    </ScrollView>
+                <Button
+                    android:id="@+id/register_register_btn"
+                    android:text="@string/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
