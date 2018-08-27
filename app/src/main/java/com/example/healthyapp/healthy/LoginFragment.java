@@ -57,9 +57,9 @@ public class LoginFragment extends Fragment{
                 } else if (_userIdStr.equals("admin") && _passwordStr.equals("admin")){
                     getActivity().getSupportFragmentManager()
                             .beginTransaction()
-                            .replace(R.id.main_view, new BMIFragment())
+                            .replace(R.id.main_view, new MenuFragment())
                             .commit();
-                    Log.d("User", "GO TO BMI");
+                    Log.d("User", "GO TO MENU");
                 } else {
                     Toast.makeText(
                             getActivity(), "User หรือ Password ไม่ถูกต้อง", Toast.LENGTH_SHORT
