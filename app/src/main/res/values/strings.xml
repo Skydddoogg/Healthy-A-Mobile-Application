@@ -9,4 +9,8 @@
     <string name="height">Height(cm)</string>
     <string name="weight">Weight(kg)</string>
     <string name="btn_calculate">CALCULATE</string>
+    <string name="btn_back">BACK</string>
+    <string name="btn_addWeight">Add Weight</string>
+    <string name="btn_save">Save</string>
+    <string name="recoreding_date">Recording date</string>
 </resources>
