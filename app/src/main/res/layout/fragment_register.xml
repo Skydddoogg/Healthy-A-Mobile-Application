@@ -20,27 +20,11 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/register_user_id"
-                    android:drawableLeft="@drawable/ic_person"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/user_id"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/register_name"
+                    android:id="@+id/register_email"
                     android:layout_width="match_parent"
                     android:drawableLeft="@drawable/ic_account"
-                    android:hint="@string/name"
+                    android:hint="@string/email"
                     android:inputType="text"
-                    android:layout_height="wrap_content" />
-
-                <EditText
-                    android:id="@+id/register_age"
-                    android:layout_width="match_parent"
-                    android:drawableLeft="@drawable/ic_date"
-                    android:hint="@string/age"
-                    android:inputType="number"
                     android:layout_height="wrap_content" />
 
                 <EditText
@@ -48,6 +32,14 @@
                     android:layout_width="match_parent"
                     android:drawableLeft="@drawable/ic_lock"
                     android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/register_repassword"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:hint="@string/repassword"
                     android:inputType="textPassword"
                     android:layout_height="wrap_content" />
 

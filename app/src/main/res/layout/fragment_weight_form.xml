@@ -20,8 +20,7 @@
             android:id="@+id/weight_form_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/recoreding_date"
-            android:inputType="date" />
+            android:hint="@string/recoreding_date" />
 
         <EditText
             android:id="@+id/weight_form_weight"

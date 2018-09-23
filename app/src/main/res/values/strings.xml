@@ -13,4 +13,6 @@
     <string name="btn_addWeight">Add Weight</string>
     <string name="btn_save">Save</string>
     <string name="recoreding_date">Recording date</string>
+    <string name="email">Email</string>
+    <string name="repassword">Re-Password</string>
 </resources>

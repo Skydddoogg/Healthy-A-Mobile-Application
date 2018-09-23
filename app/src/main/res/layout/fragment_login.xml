@@ -26,12 +26,12 @@
                 app:srcCompat="@drawable/img_app_logo" />
 
             <EditText
-                android:id="@+id/login_user_id"
+                android:id="@+id/login_email"
                 android:drawableLeft="@drawable/ic_person"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="@string/user_id" />
+                android:hint="@string/email" />
 
             <EditText
                 android:id="@+id/login_password"

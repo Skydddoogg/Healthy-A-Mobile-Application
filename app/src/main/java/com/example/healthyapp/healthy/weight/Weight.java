@@ -1,15 +1,17 @@
-package com.example.healthyapp.healthy.menu;
+package com.example.healthyapp.healthy.weight;
 
-public class Weight {
+import android.support.annotation.NonNull;
+
+public class Weight{
     String date;
-    int weight;
+    Double weight;
     String status;
 
     public Weight(){
 
     }
 
-    public Weight(String date, int weight, String status){
+    public Weight(String date, Double weight, String status){
         this.date = date;
         this.weight = weight;
         this.status = status;
@@ -23,11 +25,11 @@ public class Weight {
         this.date = date;
     }
 
-    public int getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Double weight) {
         this.weight = weight;
     }
 
@@ -38,4 +40,5 @@ public class Weight {
     public void setStatus(String status) {
         this.status = status;
     }
+
 }

@@ -9,9 +9,17 @@
             android:padding="35dp"
             android:orientation="vertical">
 
+
             <Button
                 android:id="@+id/weight_history_add_btn"
                 android:text="@string/btn_addWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"/>
+
+            <Button
+                android:id="@+id/weight_history_back_btn"
+                android:text="@string/btn_back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"/>
