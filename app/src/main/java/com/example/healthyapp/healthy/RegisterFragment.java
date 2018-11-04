@@ -38,6 +38,8 @@ public class RegisterFragment extends Fragment{
 
         super.onActivityCreated(savedInstanceState);
 
+        initBackButton();
+
         mAuth = FirebaseAuth.getInstance();
         Button _registerBtn = getView().findViewById(R.id.register_register_btn);
 
@@ -100,6 +102,19 @@ public class RegisterFragment extends Fragment{
                         getActivity(), e.getLocalizedMessage(), Toast.LENGTH_SHORT
                 ).show();
                 Log.d("Register", "FAIL TO REGISTER");
+            }
+        });
+    }
+
+    void initBackButton(){
+        Button _backBtn = getView().findViewById(R.id.register_back_btn);
+        _backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_view, new LoginFragment())
+                        .commit();
             }
         });
     }
